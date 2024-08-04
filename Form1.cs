@@ -39,6 +39,11 @@ namespace Tiipos_e_referências
             lucinda.WhoIam();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lloyd.TellMe("Hi", lucinda);
+        }
+
         private void btSwap_Click(object sender, EventArgs e)
         {
             Elephant holder;

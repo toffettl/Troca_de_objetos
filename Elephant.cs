@@ -16,5 +16,13 @@ namespace Tiipos_e_referências
         {
             MessageBox.Show("Minhas orelhas tem " + EarSize + " centimetros de tamanho. Disse " + Name);
         }
+        public void TellMe(string message, Elephant whoSaidIt)
+        {
+            MessageBox.Show(whoSaidIt.Name + " says: " + message);
+        }
+        public void SpeakTo(Elephant whoToTalkTo, string message)
+        {
+            whoToTalkTo.TellMe(message, this);
+        }
     }
 }
